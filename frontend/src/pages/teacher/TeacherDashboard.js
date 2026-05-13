@@ -509,7 +509,7 @@ function TeacherDashboard() {
   }, [activeTab, attView]);
 
   // ── toggle one student ──
-  const toggleStatus = (studentId) => {
+  const _toggleStatus = (studentId) => {
     setAttRecords(prev => ({
       ...prev,
       [studentId]: prev[studentId] === "present" ? "absent" : "present"
