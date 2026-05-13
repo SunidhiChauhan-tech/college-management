@@ -509,12 +509,12 @@ function TeacherDashboard() {
   }, [activeTab, attView]);
 
   // ── toggle one student ──
-  const _toggleStatus = (studentId) => {
-    setAttRecords(prev => ({
-      ...prev,
-      [studentId]: prev[studentId] === "present" ? "absent" : "present"
-    }));
-  };
+  // const _toggleStatus = (studentId) => {
+  //   setAttRecords(prev => ({
+  //     ...prev,
+  //     [studentId]: prev[studentId] === "present" ? "absent" : "present"
+  //   }));
+  // };
 
   // ── mark all present / all absent ──
   const markAll = (status) => {
